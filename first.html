@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--back color with hover-->
+    <button class="bg-rose-400 hover:bg-sky-500 ...">
+        Save changes
+    </button>
+    <!--bg color hove and active  and outline-->
+    <button
+        class="bg-orange-500  hover:bg-pink-600 active:bg-yellow-200 focus:outline-none focus:ring focus:ring-violet-300 ...">
+        Save changes
+    </button>
+    <!--container -->
+    <div class="container mx-auto">
+        123
+    </div>
+    <!--columns & break aftre column & break before column hover & reponsive-->
+    <div class="columns-2 hover:bg-sky-500">
+        <p>Well, let me tell you something, ...</p>
+        <!--<p class="sm:break-after-column">Sure, go ahead, laugh...</p>-->
+        <p class="sm:break-before-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+    </div>
+    <!--break inside column-->
+    <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-inside-avoid-column hover:bg-rose-700">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+    </div>
+    <!--box deoration slice and clone-->
+    <span class="box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+    </span>
+    <span class=" md:box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+    </span>
+    <!--border box & content-box reponsive and also hover-->
+    <div class=" md:box-border h-32 w-32 p-4 border-4   hover:bg-sky-500 ...">
+        hiii
+    </div>
+    <div class="box-content h-32 w-32 p-4 border-2 hover:bg-pink-600 ...">
+        123
+    </div>
+    <!--inline inline-block block-->
+    <div>
+        When controlling the flow of text, using the CSS property
+        <span class="inline">display: inline</span>
+        will cause the text inside the element to wrap normally.
+
+        While using the property <span class="inline-block">display: inline-block</span>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+
+        Lastly, using the property <span class="block ">display: block</span>
+        will put the element on its own line and fill its parent.
+    </div>
+    <!--two line space the using flow root-->
+    <div class="p-4">
+        <div class="flow-root ...">
+            <div class="my-4 ...">Well, let me tell you something, ...</div>
+        </div>
+        <div class="flow-root ...">
+            <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+        </div>
+    </div>
+
+    <!--grid declration row & col-->
+    <div class="grid gap-4 grid-cols-3 grid-rows-3">
+
+    </div>
+    <!--table-->
+    <div class="table w-full ...">
+        <div class="table-header-group ...">
+            <div class="table-row">
+                <div class="table-cell text-left ...">Song</div>
+                <div class="table-cell text-left ...">Artist</div>
+                <div class="table-cell text-left ...">Year</div>
+            </div>
+        </div>
+        <div class="table-row-group">
+            <div class="table-row">
+                <div class="table-cell  ...">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+                <div class="table-cell ...">Malcolm Lockyer</div>
+                <div class="table-cell ...">1961</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell  ...">Witchy Woman</div>
+                <div class="table-cell ...">The Eagles</div>
+                <div class="table-cell ...">1972</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell ...">Shining Star</div>
+                <div class="table-cell ...">Earth, Wind, and Fire</div>
+                <div class="table-cell ...">1975</div>
+            </div>
+        </div>
+    </div>
+    <!--hidden-->
+    <div class="flex ...">
+        <div class="hidden ...">01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+    <!--floats -->
+    <!--Class
+Properties
+float-start	float: inline-start;
+float-end	float: inline-end;
+float-right	float: right;
+float-left	float: left;
+float-none	float: none;-->
+<!--clear-->
+<!--Class
+Properties
+clear-start	clear: inline-start;
+clear-end	clear: inline-end;
+clear-left	clear: left;
+clear-right	clear: right;
+clear-both	clear: both;
+clear-none	clear: none;-->
+
+
+<!--object fit-->
+<!--Class
+Properties
+object-contain	object-fit: contain;
+object-cover	object-fit: cover;
+object-fill	object-fit: fill;
+object-none	object-fit: none;
+object-scale-down	object-fit: scale-down;-->
+
+<!--object postiton-->
+<!--Class
+Properties
+object-contain	object-fit: contain;
+object-cover	object-fit: cover;
+object-fill	object-fit: fill;
+object-none	object-fit: none;
+object-scale-down	object-fit: scale-down;-->
+
+<!--over follow-->
+<!--Class
+Properties
+overflow-auto	overflow: auto;
+overflow-hidden	overflow: hidden;
+overflow-clip	overflow: clip;
+overflow-visible	overflow: visible;
+overflow-scroll	overflow: scroll;
+overflow-x-auto	overflow-x: auto;
+overflow-y-auto	overflow-y: auto;
+overflow-x-hidden	overflow-x: hidden;
+overflow-y-hidden	overflow-y: hidden;
+overflow-x-clip	overflow-x: clip;
+overflow-y-clip	overflow-y: clip;
+overflow-x-visible	overflow-x: visible;
+overflow-y-visible	overflow-y: visible;
+overflow-x-scroll	overflow-x: scroll;
+overflow-y-scroll	overflow-y: scroll;-->
+
+<!--overscroll-->
+<!--Class
+Properties
+overscroll-auto	overscroll-behavior: auto;
+overscroll-contain	overscroll-behavior: contain;
+overscroll-none	overscroll-behavior: none;
+overscroll-y-auto	overscroll-behavior-y: auto;
+overscroll-y-contain	overscroll-behavior-y: contain;
+overscroll-y-none	overscroll-behavior-y: none;
+overscroll-x-auto	overscroll-behavior-x: auto;
+overscroll-x-contain	overscroll-behavior-x: contain;
+overscroll-x-none	overscroll-behavior-x: none;-->
+
+<!--position-->
+<!--
+static	position: static;
+fixed	position: fixed;
+absolute	position: absolute;
+relative	position: relative;
+sticky	position: sticky;-->
+</body>
+
+</html>
