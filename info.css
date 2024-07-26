@@ -1,0 +1,147 @@
+@media screen and (min-device-width: 0px) and (max-device-width:325px) {
+    .sm{
+        position:relative;
+        bottom:-300px;
+        left :50px;
+       
+       }
+       .pass{
+        position: relative;
+        bottom: -75px;
+        right: -20px;
+       }
+       .heart{
+        position: relative;
+        right: -200px;
+        bottom: 10px;
+       }
+      
+      
+      
+    }
+    @media screen and (min-device-width: 326px) and (max-device-width:375px) {
+        .sm{
+            position:relative;
+            bottom:-300px;
+            left:100px;
+           
+           }
+           .pass{
+            position: relative;
+            bottom: -75px;
+            right: -30px;
+           }
+           .heart{
+            position: relative;
+            right: -200px;
+            bottom: 10px;
+           }
+          
+          
+         
+        }
+        @media screen and (min-device-width: 376px) and (max-device-width:424px) {
+            .sm{
+                position:relative;
+                bottom:-300px;
+                left:100px;
+               
+               }
+               .pass{
+                position: relative;
+                bottom: -75px;
+                right: -30px;
+               }
+               .heart{
+                position: relative;
+                right: -200px;
+                bottom: 10px;
+               }
+              
+            }
+            @media screen and (min-device-width: 425px) and (max-device-width:768px) {
+                .sm{
+                    position:relative;
+                    bottom:-300px;
+                    left:100px;
+                   
+                   }
+                   .pass{
+                    position: relative;
+                    bottom: -75px;
+                    right: -40px;
+                   } 
+                   .heart{
+                    position: relative;
+                    right: -200px;
+                    bottom: 10px;
+                   }
+                  
+                }
+                @media screen and (min-device-width: 768px) and (max-device-width:1024px) {
+                    .sm{
+                        position:relative;
+                        bottom:-300px;
+                        left:250px;
+                       }
+                       .pass{
+                        right: -130px;
+                       }
+                     
+                       .heart{
+                        position: relative;
+                        right: -200px;
+                        bottom: 10px;
+                       }
+                    }
+                    @media screen and (min-device-width: 1024px) and (max-device-width:1440px) {
+                        .sm{
+                            position:relative;
+                            bottom:-400px;
+                            left:100px;
+                           
+                           
+                           }
+                           .pass{
+                            position: relative;
+                            bottom: -110px;
+                            right: -45px;
+                            text-align: center;
+                           } 
+                           .heart{
+                            position: relative;
+                            bottom: -175px;
+                            left:185px;
+                           }
+                        }
+           
+                        @media screen and (min-device-width: 1440px) and (max-device-width:2560px) {
+                            .sm{
+                                bottom:-430px;
+                        left:150px;
+                        }
+                        .pass{
+                            position: relative;
+                            bottom: -110px;
+                            right: -45px;
+                            text-align: center;
+                           } 
+                            }
+                            @media(min-width:2560px){
+                                .sm{
+                                    bottom:-430px;
+                            left:150px;
+                            }
+                            .pass{
+                                position: relative;
+                                bottom: -110px;
+                                right: -45px;
+                                text-align: center;
+                               } 
+                                .heart{
+                            position: relative;
+                            bottom: -175px;
+                            left:185px;
+                           }
+                            }
+                            

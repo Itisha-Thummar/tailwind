@@ -1,0 +1,48 @@
+.icon-badge-group .icon-badge-container {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .icon-badge-group .icon-badge-container:first-child {
+    margin-left: 0
+  }
+  
+  .icon-badge-container {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .fa-bars {
+    font-size: 30px;
+    position: relative;
+  }
+  
+  .icon-badge {
+    background-color:blue;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+    left: 27px;
+  }
+  @media screen and (min-device-width: 769px) and (max-device-width:1024px) {
+.p1{
+width: 50%;
+display: flex;
+justify-content: space-between;
+}
+.p2{
+width: 50%;
+
+}
+.p3{
+display: flex;
+justify-content: space-between;
+margin-left: 120px;
+}
+
+  }
