@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body class="h-screen bg-stone-200">
+    <div class="lg:flex">
+        <div class="lg:w-[17%]">
+            <nav class="sidebar lg:w-[17%] max-lg:w-full lg:fixed lg:top-0 lg:left-0 h-[100%] flex flex-col">
+
+                <div class="scrollbox overflow-auto bg-red-800 m-2 rounded-md">
+                    <div class="inner-scrollbox">
+                        <div class="flex flex-col p-2">
+                            <div class="text-stone-300 pt-4 ">
+                                GENERAL
+                            </div>
+                            <div class="flex ps-4 mb-2 text-white text-base mt-2  rounded-lg pt-1 pb-1 bg-blue-400">
+                                <a href=""><i class="fa-solid fa-film pe-2 "></i>Dashboard</a>
+                            </div>
+                            <div class="flex ps-4 mb-2 text-white text-base font-light">
+                                <a href=""><i class="fa-solid fa-building pe-2 text-xs"></i>Company</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-regular fa-user pe-2"></i>patient</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base ">
+                                <a href=""><i class="fa-solid fa-flask pe-2"></i>Experts</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-regular fa-file-lines pe-2"></i>Order</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-file-pen pe-2"></i>Appoinment</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-file-lines pe-2"></i>prescription</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-flask pe-2"></i>Lab-test</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-box pe-2"></i>Quiz</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-user pe-2"></i>Admin</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""></i><i class="fa-solid fa-user-lock pe-2"></i>Admin-Role</a>
+                            </div>
+
+
+                            <div class="text-stone-300 pt-4 ">
+                                MASTER
+                            </div>
+                            <div class="flex ps-4 mb-2 text-white font-light  mt-2text-base  pt-1 pb-1 ">
+                                <a href=""><i class="fa-solid fa-table pe-2"></i>Program</a>
+                            </div>
+                            <div class="flex ps-4 mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-flask pe-2"></i>Lab-test</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-user-gear pe-2"></i>Membership</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-tv pe-2"></i>Consultations</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-user pe-2"></i>Services</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-chart-simple pe-2"></i>Designations</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-bomb pe-2"></i>Area of Experties</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-flask pe-2"></i>Coupon</a>
+                            </div>
+                            <div class="flex ps-4  mb-2 text-white font-light text-base">
+                                <a href=""><i class="fa-solid fa-cart-shopping pe-2"></i>Product</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--second sections-->
+        <div class="lg:w-[82%] overflow-y-scroll h-screen ">
+
+            <div class="sticky top-0 ">
+                <div class="flex  mt-2  bg-white items-center justify-between rounded-md md:ms-4 md:me-4  ">
+
+                    <div class="  flex items-center">
+
+                        <i class="fa-solid fa-bars ms-4 p-2 bg-rose-100 rounded-md"></i>
+                        <img src="gytree-img/logo-gytree.webp" class="w-20 mb-1" alt="">
+                    </div>
+
+
+                    <div class="flex  items-center">
+                        <p class="text-black">Gytree Admin</p>
+                        <p class="bg-red-800 text-white ps-2 pe-2 pt-1 pb-1 rounded-full ms-4 me-4">Ga</p>
+
+                    </div>
+                </div>
+            </div>
+            <!--dashboard-->
+
+            <div class="flex mt-2 md:ms-4">
+                <div class="text-black font-bold text-xl">
+                    Dashboard
+                </div>
+
+            </div>
+            <div class="flex md:ms-4">
+                <div class="text-sm text-black mb-2">
+                    Dashboard
+                </div>
+            </div>
+
+
+            <!--table-->
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 md:px-4 px-0">
+                <!--first row-->
+                <!--first-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Total Sales</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="p-2"> </td>
+                            <td class="text-xs font-bold p-2 text-center">Total No. of Sales</td>
+                            <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                        </tr>
+                        <tr class="border-b border-dashed">
+                            <td class="text-xs p-2 text-gray-400">Package</td>
+                            <td class="p-2 font-bold text-xs text-center">2</td>
+                            <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400">Labtest</td>
+                            <td class="p-2 font-bold text-xs text-center">2</td>
+                            <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[60px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--second-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">User wise sales</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">User Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                        </tr>
+                        <tr class="border-b border-dashed">
+                            <td class="text-xs p-2 text-gray-400">Riddhi Gupta</td>
+                            <td class="p-2 text-xs text-end font-semibold">5250.00</td>
+                        </tr>
+                        <tr class="border-b border-dashed">
+                            <td class="text-xs p-2 text-gray-400">Sinjini</td>
+                            <td class="p-2 text-xs text-end font-semibold">3500.00</td>
+                        </tr>
+                        <tr class="border-b border-dashed">
+                            <td class="text-xs p-2 text-gray-400">Monika Sharma</td>
+                            <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400">Trupti Milind Bansode</td>
+                            <td class="p-2 text-xs text-end font-semibold">0.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--second row-->
+                <!--first-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Coupon use</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Coupon Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total used</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400">FAMILY (code:FAMILY)</td>
+                            <td class="p-2 text-xs text-end font-semibold">2</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[100px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--second-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Doctor Revenue</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Expert Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                        </tr>
+                        <tr class="border-b border-dashed ">
+                            <td class="text-xs p-2 text-gray-400">Shradhha Dhapare</td>
+                            <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400"> </td>
+                            <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[70px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--third row-->
+                <!--first-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Coupon use</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Coupon Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total used</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400">FAMILY (code:FAMILY)</td>
+                            <td class="p-2 text-xs text-end font-semibold">2</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[100px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--second-->
+                <div class="bg-white p-2 rounded-lg">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Doctor Revenue</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Expert Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                        </tr>
+                        <tr class="border-b border-dashed ">
+                            <td class="text-xs p-2 text-gray-400">Shradhha Dhapare</td>
+                            <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400"> </td>
+                            <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[70px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--four-->
+                <!--first-->
+                <div class="bg-white p-2 rounded-lg mb-2">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Coupon use</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Coupon Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total used</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400">FAMILY (code:FAMILY)</td>
+                            <td class="p-2 text-xs text-end font-semibold">2</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[100px]"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--second-->
+                <div class="bg-white p-2 rounded-lg mb-2">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-sm">Doctor Revenue</p>
+                        <div class="flex p-1 bg-gray-100 items-center border ">
+                            <p class="text-xs"><i class="fa-solid fa-calendar-days pe-2 text-gray-400"></i>31-7-2024 -
+                                31-7-2024</p>
+                        </div>
+                    </div>
+                    <table class="bg-gray-100 w-full mt-2 rounded">
+                        <tr>
+                            <td class="text-xs font-bold p-2">Expert Name</td>
+                            <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                        </tr>
+                        <tr class="border-b border-dashed ">
+                            <td class="text-xs p-2 text-gray-400">Shradhha Dhapare</td>
+                            <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs p-2 text-gray-400"> </td>
+                            <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                        </tr>
+                        <tr>
+                            <td class="h-[70px]"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
