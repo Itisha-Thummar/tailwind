@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+<style>
+    
+    
+    
+   
+    .parent:hover .p1 {
+       rotate: 45deg;
+       background-color: white;
+       border: none;
+    }
+   
+    
+    .search{
+    
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+     
+    }
+    .parent:hover .p2 {
+        position: absolute;
+        bottom: 100px;
+        left: -70px;
+       
+     }
+    .bell{
+        
+        position: absolute;
+        bottom: 8px;
+        left: 10px;
+    }
+    .parent:hover .p3 {
+        position: absolute;
+        bottom: 150px;
+        left: 10px;
+       
+     }
+    .heart{
+      
+        position: absolute;
+        bottom: 14px;
+        left: 10px; 
+    }
+    .parent:hover .p4 {
+        position: absolute;
+        bottom: 100px;
+        left: 93px;
+       
+     }
+    .plus{
+     z-index: 5;
+    }
+   
+</style>
+    </head>
+<body class="bg-pink-200">
+    <div class="flex my-64">
+    <div class="w-[20%] "></div>
+    <div class="w-[60%] ">
+<div class="parent">    
+<div class="flex bg-white justify-around p-4 rounded-t-lg rounded-b-3xl ">
+    <div class="">
+        <i class="fa-solid fa-house text-3xl"></i>
+    </div>
+  
+
+
+
+    <div class="" style="position: relative;">
+       <!--plus-->
+        <div class="bg-pink-400 plus p-6 rounded-full border-4  w-fit h-fit mt-[-80%] border-stone-100 p1 " style="position: relative;">
+            <div class="child ">
+        <img src="plus-svgrepo-com.svg" class="w-6 h-6 " alt="">
+       
+        
+    </div>
+    </div>
+    <!--search-->
+    <div class="search  p2 ">
+        <i class="fa-solid fa-magnifying-glass text-xl bg-rose-600 pt-2 pb-2 ps-4 pe-4 rounded-full"></i>
+       </div>
+       <!--bell-->
+       <div class="bell p3">
+        <i class="fa-solid fa-bell text-xl bg-green-600 pt-2 pb-2 ps-4 pe-4 rounded-full"></i>
+       </div>
+       <!--heart-->
+       <div class="heart p4">
+        <i class="fa-solid fa-heart text-xl bg-blue-800 pt-2 pb-2 ps-4 pe-4 rounded-full"></i>
+       </div>
+   
+    </div>
+   
+    <div class="">
+        <i class="fa-solid fa-user text-3xl"></i>
+    </div>
+</div>
+</div>
+        </div>
+    
+<div class="w-[20%]"></div>
+    </div>
+</body>
+</html>

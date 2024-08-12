@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+<style>
+    .parent:hover .child{
+        transform: scale(0.91);
+       
+    }
+    .parent:hover .p1 {
+       color:red;
+    }
+    .parent:hover .p2 {
+        border:1px solid gainsboro;
+     }
+   
+</style>
+    </head>
+<body class="bg-stone-50">
+    <div class="flex justify-center mt-4 mb-6">
+        <div class="text-black font-bold text-4xl">
+Neumorphics buttons
+        </div>
+    </div>
+    <!--button-->
+    <!--first row-->
+    
+    <div class="flex justify-center gap-x-6 gap-y-6 flex-wrap">
+        
+           
+        <!--first button-->
+        <div class="bg-stone-100 p-2 rounded-md ">
+           
+        <div class="bg-stone-200 px-6 py-6 rounded-md mt-2 ms-2 me-2">
+            <div class="text-red-500 text-center ">
+                <i class="fa-solid fa-fire text-3xl"></i>
+            </div>
+            <div class="text-red-500 mt-2  ">
+              Button 1
+            </div>
+        </div>
+        </div>
+         
+<!--second button-->
+<div class="parent hover:overflow-x-hidden">
+           
+        <div class="bg-stone-100 p-2 rounded-md">
+            <div class="child ">
+            <div class="bg-stone-200 px-8 py-8 rounded-md">
+                <div class="text-black text-center p1">
+                    <i class="fa-solid fa-hourglass-start text-3xl"></i>
+                </div>
+                <div class="text-black mt-2 p1">
+                  Button 2
+                </div>
+            </div>
+            </div>
+</div>
+</div>
+            <!--third button-->
+            <div class="parent hover:overflow-x-hidden">
+            <div class="bg-stone-100 p-2 rounded-md">
+                <div class="child ">
+                <div class="bg-stone-200 px-8 py-8 rounded-md">
+                    <div class="text-black text-center p1">
+                        <i class="fa-solid fa-chart-line text-3xl"></i>
+                    </div>
+                    <div class="text-black mt-2 p1">
+                      Button 3
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+<!--second row-->
+<div class="flex justify-center gap-x-6 mt-6">
+    <!--first button-->
+    <div class="parent hover:overflow-x-hidden">
+    <div class="bg-stone-100 p-2 rounded-md">
+        <div class="child">
+    <div class="bg-stone-200 px-8 py-8 rounded-md">
+        <div class="text-black text-center p1">
+            <i class="fa-brands fa-react text-3xl"></i>
+        </div>
+        <div class="text-black mt-2 p1 ">
+          Button 4
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<!--second button-->
+<div class="parent hover:overflow-x-hidden">
+    <div class="bg-stone-100 p-2 rounded-md">
+        <div class="child">
+        <div class="bg-stone-200 px-8 py-8 rounded-md">
+            <div class="text-black text-center p1">
+                <i class="fa-brands fa-pagelines text-3xl "></i>
+            </div>
+            <div class="text-black mt-2 p1">
+              Button 5
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+        <!--third button-->
+        <div class="parent hover:overflow-x-hidden">
+        <div class="bg-stone-100 p-2 rounded-md">
+            <div class="child">
+            <div class="bg-stone-200 px-8 py-8 rounded-md">
+                <div class="text-black text-center p1">
+                    <i class="fa-regular fa-star text-3xl"></i>
+                </div>
+                <div class="text-black mt-2 p1">
+                  Button 6
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+</div>
+      
+</body>
+</html>
